@@ -54,6 +54,7 @@ Copy `.env.example` to `.env` and fill it in:
 | | |
 | --- | --- |
 | `GOOGLE_GENERATIVE_AI_API_KEY_1` | [Google AI Studio](https://aistudio.google.com/) — writes the lesson and the code. `_2`, `_3` are optional spares. |
+| `GROQ_API_KEY` | [Groq](https://console.groq.com/) — powers chat and topic generation. |
 | `E2B_API_KEY` | [E2B](https://e2b.dev) — renders the video |
 | `CONVEX_DEPLOYMENT`, `NEXT_PUBLIC_CONVEX_URL` | [Convex](https://convex.dev) — chats and videos |
 | `QSTASH_*` | [Upstash](https://upstash.com) — runs the render workflow |
@@ -61,7 +62,7 @@ Copy `.env.example` to `.env` and fill it in:
 | `UPLOADTHING_*` | [UploadThing](https://uploadthing.com) — stores finished videos |
 | `NEXT_PUBLIC_CLERK_*`, `CLERK_*` | [Clerk](https://clerk.com) — accounts |
 
-Optional: `GROQ_API_KEY` for Groq-backed chat and topic generation, `DEEPGRAM_API_KEY` or `OPENROUTER_API_KEY` for a better English voice (falls back to gTTS), PostHog for analytics, and the YouTube and X keys for auto-posting.
+Optional: `DEEPGRAM_API_KEY` or `OPENROUTER_API_KEY` for a better English voice (falls back to gTTS), PostHog for analytics, and the YouTube and X keys for auto-posting.
 
 ```bash
 bun run dev
